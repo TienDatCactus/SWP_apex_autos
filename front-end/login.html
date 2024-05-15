@@ -1089,18 +1089,22 @@
             </div>
 
             <div class="input-box">
-              <form class="row g-4">
+              <form class="row g-4" id="form-1">
                 <div class="col-12">
-                  <div class="form-floating theme-form-floating log-in-form">
-                    <input type="email" class="form-control" id="email" placeholder="Email Address" />
+                  <div class="form-floating theme-form-floating log-in-form input email-input">
+                    <input type="text" name="email" class="form-control input " id="email"
+                      placeholder="Email Address" />
                     <label for="email">Email Address</label>
+                    <span class="form-msg"></span>
                   </div>
                 </div>
 
                 <div class="col-12">
-                  <div class="form-floating theme-form-floating log-in-form">
-                    <input type="password" class="form-control" id="password" placeholder="Password" />
-                    <label for="password">Password</label>
+                  <div class="form-floating theme-form-floating log-in-form input password-input">
+                    <input type="password" name="text" class="form-control input" id="password"
+                      placeholder="Password" />
+                    <label for="password" class="">Password</label>
+                    <span class="form-msg"></span>
                   </div>
                 </div>
 
@@ -1445,6 +1449,32 @@
 
   <!-- script js -->
   <script src="../assets/js/script.js"></script>
+
+  <!-- validation.js -->
+  <script src="../assets/js/valid.js"></script>
+  <script>
+    validator({
+      form: "#form-1",
+      inputSelector: ".input",
+      errorSelector: ".form-msg",
+      rules: [
+        validator.isRequired(".name"),
+        // validator.isRequired("input[type=radio]"),
+        // validator.isRequired("input[type=file]"),
+        // validator.isRequired("select"),
+        validator.isRequired("#email"),
+        validator.isEmail("#email"),
+        validator.minLength("#password", 6),
+        validator.isRequired("#password"),
+        validator.checkPass(".re-password", function () {
+          return document.querySelector("#form-1 .password").value;
+        }),
+      ],
+      onSubmit: function (data) {
+        console.log(data);
+      },
+    });
+  </script>
 </body>
 
 </html>
