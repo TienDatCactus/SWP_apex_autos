@@ -5,10 +5,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fastkart" />
-  <meta name="keywords" content="Fastkart" />
-  <meta name="author" content="Fastkart" />
-  <link rel="icon" href="../assets/images/favicon/1.png" type="image/x-icon" />
+  <meta name="description" content="ApexAutos" />
+  <meta name="keywords" content="ApexAutos" />
+  <meta name="author" content="ApexAutos" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
   <title>Log In</title>
 
   <!-- Google font -->
@@ -65,7 +68,7 @@
             <div class="header-offer">
               <div class="notification-slider">
                 <div>
-                  <div class="timer-notification">
+                  <div class="timer-notification" style="overflow-x: hidden;">
                     <h6>
                       <strong class="me-1">Welcome to myNiggaCar!</strong>Wrap
                       new offers/gift every day on Weekends.<strong class="ms-1">New Coupon Code: niggaWhat!
@@ -104,15 +107,9 @@
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0)" id="france">
-                        <img src="../assets/images/country/germany.png" class="img-fluid blur-up lazyload" alt="" />
-                        <span>Germany</span>
-                      </a>
-                    </li>
-                    <li>
                       <a class="dropdown-item" href="javascript:void(0)" id="chinese">
-                        <img src="../assets/images/country/turkish.png" class="img-fluid blur-up lazyload" alt="" />
-                        <span>Turki</span>
+                        <img src="../assets/images/country/vn.png" class="img-fluid blur-up lazyload" alt="" />
+                        <span>Viet Nam</span>
                       </a>
                     </li>
                   </ul>
@@ -126,13 +123,10 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end sm-dropdown-menu" aria-labelledby="select-dollar">
                     <li>
-                      <a class="dropdown-item" id="aud" href="javascript:void(0)">AUD</a>
+                      <a class="dropdown-item" id="aud" href="javascript:void(0)">VND</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" id="eur" href="javascript:void(0)">EUR</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" id="cny" href="javascript:void(0)">CNY</a>
+                      <a class="dropdown-item" id="cny" href="javascript:void(0)">USD</a>
                     </li>
                   </ul>
                 </div>
@@ -159,12 +153,12 @@
               </a>
 
               <div class="middle-box">
-                <div class="location-box">
+                <div class="location-box" style="background-color: #acacac;">
                   <button class="btn location-button" data-bs-toggle="modal" data-bs-target="#locationModal">
                     <span class="location-arrow">
                       <i data-feather="map-pin"></i>
                     </span>
-                    <span class="locat-name">Your Location</span>
+                    <span class="locat-name" style="text-decoration: line-through;color: #5e5e5e;">Your Location</span>
                     <i class="fa-solid fa-angle-down"></i>
                   </button>
                 </div>
@@ -209,20 +203,20 @@
                       </div>
                       <div class="delivery-detail">
                         <h6>24/7 Delivery</h6>
-                        <h5>+91 888 104 2340</h5>
+                        <h5>+84 33 1234 567</h5>
                       </div>
                     </a>
                   </li>
-                  <li class="right-side">
+                  <!-- <li class="right-side">
                     <a href="wishlist.html" class="btn p-0 position-relative header-wishlist">
                       <i data-feather="heart"></i>
                     </a>
-                  </li>
-                  <li class="right-side">
+                  </li> -->
+                  <!-- <li class="right-side">
                     <div class="onhover-dropdown header-badge">
                       <button type="button" class="btn p-0 position-relative header-wishlist">
                         <i data-feather="shopping-cart"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge">2
+                        <span class="position-absolute top-0 start-100 translate-middle badge">0
                           <span class="visually-hidden">unread messages</span>
                         </span>
                       </button>
@@ -280,7 +274,7 @@
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </li> -->
                   <li class="right-side onhover-dropdown">
                     <div class="delivery-login-box">
                       <div class="delivery-icon">
@@ -288,7 +282,7 @@
                       </div>
                       <div class="delivery-detail">
                         <h6>Hello,</h6>
-                        <h5>My Account</h5>
+                        <h5>Anonymous user</h5>
                       </div>
                     </div>
 
@@ -993,7 +987,8 @@
             </div>
 
             <div class="header-nav-right">
-              <button class="btn deal-button" data-bs-toggle="modal" data-bs-target="#deal-box">
+              <button class="btn deal-button" data-bs-toggle="modal" data-bs-target="#deal-box"
+                style="background-color: #acacac;color: #5e5e5e;text-decoration: line-through;">
                 <i data-feather="zap"></i>
                 <span>Deal Today</span>
               </button>
@@ -1029,7 +1024,7 @@
         </a>
       </li>
 
-      <li>
+      <!-- <li>
         <a href="wishlist.html" class="notifi-wishlist">
           <i class="iconly-Heart icli"></i>
           <span>My Wish</span>
@@ -1041,7 +1036,7 @@
           <i class="iconly-Bag-2 icli fly-cate"></i>
           <span>Cart</span>
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
   <!-- mobile fix menu end -->
@@ -1089,7 +1084,7 @@
             </div>
 
             <div class="input-box">
-              <form class="row g-4" id="form-1">
+              <form class="row g-3" id="form-1">
                 <div class="col-12">
                   <div class="form-floating theme-form-floating log-in-form input email-input">
                     <input type="text" name="email" class="form-control input " id="email"
@@ -1100,10 +1095,10 @@
                 </div>
 
                 <div class="col-12">
-                  <div class="form-floating theme-form-floating log-in-form input password-input">
+                  <div class="form-floating theme-form-floating log-in-form  input password-input ">
                     <input type="password" name="text" class="form-control input" id="password"
                       placeholder="Password" />
-                    <label for="password" class="">Password</label>
+                    <label for="password">Password</label>
                     <span class="form-msg"></span>
                   </div>
                 </div>
@@ -1171,11 +1166,11 @@
             <div class="service-contain">
               <div class="service-box">
                 <div class="service-image">
-                  <img src="../assets/svg/product.svg" class="blur-up lazyload" alt="" />
+                  <img src="../assets/svg/sedan.png" class="blur-up lazyload" alt="" />
                 </div>
 
                 <div class="service-detail">
-                  <h5>Every Fresh Products</h5>
+                  <h5>Newest Cars</h5>
                 </div>
               </div>
 
@@ -1185,7 +1180,7 @@
                 </div>
 
                 <div class="service-detail">
-                  <h5>Free Delivery For Order Over $50</h5>
+                  <h5>Free Delivery For Order Over $50k</h5>
                 </div>
               </div>
 
@@ -1195,7 +1190,7 @@
                 </div>
 
                 <div class="service-detail">
-                  <h5>Daily Mega Discounts</h5>
+                  <h5>Monthly Mega Discounts</h5>
                 </div>
               </div>
 
@@ -1225,18 +1220,20 @@
 
               <div class="footer-logo-contain">
                 <p>
-                  We are a friendly bar serving a variety of cocktails, wines
-                  and beers. Our bar is a perfect place for a couple.
+                  Discover a <b>seamless online car buying experience</b> with unbeatable prices, extensive selections,
+                  and
+                  convenient delivery.
                 </p>
 
                 <ul class="address">
                   <li>
                     <i data-feather="home"></i>
-                    <a href="javascript:void(0)">1418 Riverwood Drive, CA 96052, US</a>
+                    <a href="javascript:void(0)">Khu Công Nghệ Cao Hòa Lạc, Hà Nội
+                    </a>
                   </li>
                   <li>
                     <i data-feather="mail"></i>
-                    <a href="javascript:void(0)">support@fastkart.com</a>
+                    <a href="javascript:void(0)">niggawhat@fpt.edu.vn</a>
                   </li>
                 </ul>
               </div>
@@ -1253,21 +1250,7 @@
                 <li>
                   <a href="shop-left-sidebar.html" class="text-content">Vegetables & Fruit</a>
                 </li>
-                <li>
-                  <a href="shop-left-sidebar.html" class="text-content">Beverages</a>
-                </li>
-                <li>
-                  <a href="shop-left-sidebar.html" class="text-content">Meats & Seafood</a>
-                </li>
-                <li>
-                  <a href="shop-left-sidebar.html" class="text-content">Frozen Foods</a>
-                </li>
-                <li>
-                  <a href="shop-left-sidebar.html" class="text-content">Biscuits & Snacks</a>
-                </li>
-                <li>
-                  <a href="shop-left-sidebar.html" class="text-content">Grocery & Staples</a>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -1349,7 +1332,7 @@
                     <i data-feather="mail"></i>
                     <div class="contact-number">
                       <h6 class="text-content">Email Address :</h6>
-                      <h5>fastkart@hotmail.com</h5>
+                      <h5>ApexAutos@hotmail.com</h5>
                     </div>
                   </div>
                 </li>
@@ -1377,7 +1360,7 @@
 
       <div class="sub-footer section-small-space">
         <div class="reserve">
-          <h6 class="text-content">©2022 Fastkart All rights reserved</h6>
+          <h6 class="text-content">©2022 ApexAutos All rights reserved</h6>
         </div>
 
         <div class="payment">

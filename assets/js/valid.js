@@ -181,3 +181,12 @@ validator.checkPass = function (selector, getPass) {
     },
   };
 };
+
+validator.phone = (selector) => {
+  return {
+    selector: selector,
+    test: function (value) {
+      return /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/.test(value) ? undefined : "Please enter a real phone number ! ( if you are a vietnames )";
+    }
+  }
+}
