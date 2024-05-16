@@ -448,3 +448,9 @@ $(".navbar-toggler-icon-2").click(function () {
 $(".bg-overlay").click(function () {
     $(".bg-overlay, .sidebar-col").removeClass("show");
 });
+
+
+/*=====================
+   26. Toggle Dark mode
+   ==========================*/
+
